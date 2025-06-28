@@ -3,7 +3,7 @@ body {
     background-color: #1a202c; /* Dark background */
     color: #00ff00; /* Pip-Boy green */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     min-height: 100vh;
     margin: 0;
@@ -152,6 +152,26 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    &.demo {
+        margin: 0;
+    }
+}
+.image-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+}
+.image-set>div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.image-set>div>img {
+    margin: 0;
 }
 .martiancorp-logo {
     font-family: 'Press Start 2P', cursive;
